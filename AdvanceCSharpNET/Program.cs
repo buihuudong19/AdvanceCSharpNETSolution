@@ -4,24 +4,85 @@ public class Program
 {
     public static void Main()
     {
-        //Tao ra 1 doi tuong Employee 
-        Employee e = new Employee();
-        e.Id = 1;
-        e.Name = "Bui Huu Dong";
-        e.Address = "Quan 10, TPHCM";
-        e.Dob=new DateOnly(1983,03,19);//Overloading (nap chong/qua tai)
-        e.WorkHour = 25;
-        e.SalaryRate = 250_000; //number literal
+        var run = true;
+        do
+        {
+            Console.Clear();
+            //string interpolations
+            Console.WriteLine($"Choises:");
+            Console.WriteLine($"1. Fetch and display the employee with id=1");
+            Console.WriteLine($"2. Add new employee");
+            Console.WriteLine($"3. Show all employees");
+            Console.WriteLine($"4. Exit");
+            dynamic input = Console.ReadLine();//"4"
+            Console.Clear();
+            try
+            {
 
-        Employee e2 = new Employee(2,"Tran Hau Binh",new DateOnly(2002,10,10), "Quan 2, TPHCM", 23, 300_000);
+                switch (input)
+                {
+                    case "1":
 
-        Employee e3 = new Employee();
-        //var/dynamic
+                        break;
+                    case "2":
+                        CreateEmployee();
+                        break;
+                    case "3":
+                        ListAllEmployees();
+                        break;
+                    case "4":
+                        run = false;
+                        break;
+                    default:
+                        Console.WriteLine($"Invalid option when you choose...");
+                        break;
+                }
 
-        int[] array = null;
-        Console.WriteLine(array?.Length);
+            }catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
-        Console.ReadLine();
-        
+            Console.WriteLine($"==================================");
+            Console.WriteLine($"Press the enter to go back to the main menu");
+            Console.ReadLine();
+
+        }while (run);//while(condition){..}, for.., forEach, recursive
+   /*
+        n!=n(n-1)(n-2)..(1)
+    
+    */
+    }
+
+    private static void CreateEmployee()
+    {
+        Console.Clear();
+        Console.Write($"Please enter the name: ");
+        var name = Console.ReadLine();
+        Console.Write($"Please enter the address: ");
+        var address = Console.ReadLine();
+        Console.Write($"Please enter the Work Hourly: ");
+        string? workHourkly = Console.ReadLine();
+        Console.Write($"Please enter the Work Rate: ");
+        var workHourkRate = Console.ReadLine();
+        //object initalize
+        var emp = new Employee
+        {
+            Id = Employee.NextId,
+            Name = name,
+            Address = address,
+            Dob = new DateOnly(1982, 05, 03),
+            WorkHour = int.Parse(workHourkly ?? default),
+            SalaryRate = double.Parse(workHourkRate ?? default),    
+        };
+        emp.Save(); 
+    }
+
+    private static void ListAllEmployees()
+    {
+        foreach(Employee e in Employee.Employees)
+        {
+            Console.WriteLine(e);  
+        }
     }
 }
