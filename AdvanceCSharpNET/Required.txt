@@ -1,0 +1,15 @@
+﻿Lập trình hướng đối tượng thỏa mãn:
+Một công ty quản lý nhân viên (mã nhân viên, tên, ngày sinh, địa chỉ, ngày công, hệ số lương). Lập trình thực hiện các nghiệp vụ sau:
+	+ Cho phép thêm mới một nhân viên
+	+ Cho phép sắp xếp và hiển thị toàn bộ nhân viên ra màn hình
+	+ Cho phép tìm kiếm 1 nhân viên và hiển thị ra màn hình
+	+ Hiển thị tổng lương của tất cả các nhân viên
+
+
+
+ <datatype>	ten_ham(a,b,c..){
+	
+	}
+ void ten_ham(a,b,c...){
+
+}
