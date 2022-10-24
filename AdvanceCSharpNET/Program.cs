@@ -4,6 +4,14 @@ public class Program
 {
     public static void Main()
     {
+        Person person = new Employee();
+        Person student = new Student();//polymorphis
+
+        Person[] people = new Person[] { person, student};
+
+        Console.WriteLine(person.Print() + "abc");
+        
+
         var run = true;
         do
         {
