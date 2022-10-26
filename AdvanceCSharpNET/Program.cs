@@ -1,16 +1,15 @@
-﻿using AdvanceCSharpNET.Entities;
-namespace Manager.Employees;
+﻿namespace AdvanceCSharpNET;
 public class Program
 {
     public static void Main()
     {
-        Person person = new Employee();
+        Person person = new Employee();//dependency Injection (library)
         Person student = new Student();//polymorphis
 
-        Person[] people = new Person[] { person, student};
+        Person[] people = new Person[] { person, student };
 
         Console.WriteLine(person.Print() + "abc");
-        
+
 
         var run = true;
         do
@@ -46,7 +45,8 @@ public class Program
                         break;
                 }
 
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
@@ -55,11 +55,11 @@ public class Program
             Console.WriteLine($"Press the enter to go back to the main menu");
             Console.ReadLine();
 
-        }while (run);//while(condition){..}, for.., forEach, recursive
-   /*
-        n!=n(n-1)(n-2)..(1)
-    
-    */
+        } while (run);//while(condition){..}, for.., forEach, recursive
+        /*
+             n!=n(n-1)(n-2)..(1)
+
+         */
     }
 
     private static void CreateEmployee()
@@ -81,16 +81,16 @@ public class Program
             Address = address,
             Dob = new DateOnly(1982, 05, 03),
             WorkHour = int.Parse(workHourkly ?? default),
-            SalaryRate = double.Parse(workHourkRate ?? default),    
+            SalaryRate = double.Parse(workHourkRate ?? default),
         };
-        emp.Save(); 
+        emp.Save();
     }
 
     private static void ListAllEmployees()
     {
-        foreach(Employee e in Employee.Employees)
+        foreach (Employee e in Employee.Employees)
         {
-            Console.WriteLine(e);  
+            Console.WriteLine(e);
         }
     }
 }

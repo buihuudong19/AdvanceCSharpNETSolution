@@ -1,6 +1,5 @@
-﻿
-namespace AdvanceCSharpNET.Entities;
+﻿namespace AdvanceCSharpNET;
 
-public class Student:Person
+public class Student : Person
 {
 }

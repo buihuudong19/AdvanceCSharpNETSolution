@@ -1,4 +1,4 @@
-﻿namespace AdvanceCSharpNET.Entities;
+﻿namespace AdvanceCSharpNET;
 public class Person
 {
     //Note: lop con ke thua all cac thuoc tinh va filed non private
@@ -21,7 +21,7 @@ public class Person
         Address = address;
     }
 
-    public virtual string?  Print() => $"Name: {Name}, Dob: {Dob}, Address: {Address}";
- 
+    public virtual string? Print() => $"Name: {Name}, Dob: {Dob}, Address: {Address}";
+
 }
 
