@@ -1,6 +1,4 @@
-﻿
-
-namespace OOP.SOLID.SRP;
+﻿namespace OOP.SOLID.SRP;
 public class Employee
 {
     public int Id { get; set; }

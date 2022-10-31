@@ -5,13 +5,15 @@ VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdvanceCSharpNET", "AdvanceCSharpNET\AdvanceCSharpNET.csproj", "{EA7E5BAB-47E0-4975-BB7F-21199FDAC078}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedAbtraction", "AdvancedAbtraction\AdvancedAbtraction.csproj", "{FF01D915-54D5-4E95-8E13-5E77C5870BE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdvancedAbtraction", "AdvancedAbtraction\AdvancedAbtraction.csproj", "{FF01D915-54D5-4E95-8E13-5E77C5870BE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedExtensionMethod", "AdvancedExtensionMethod\AdvancedExtensionMethod.csproj", "{E23B2D87-BF7B-4530-B72F-67EB2FBDC9B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdvancedExtensionMethod", "AdvancedExtensionMethod\AdvancedExtensionMethod.csproj", "{E23B2D87-BF7B-4530-B72F-67EB2FBDC9B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.SOLID.SRP", "OOP.SOLID.SRP\OOP.SOLID.SRP.csproj", "{8908BEF8-01DA-4E9F-8045-5F3FC64C9244}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP.SOLID.SRP", "OOP.SOLID.SRP\OOP.SOLID.SRP.csproj", "{8908BEF8-01DA-4E9F-8045-5F3FC64C9244}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedDelegate", "AdvancedDelegate\AdvancedDelegate.csproj", "{50A61A9B-D21A-4575-9248-AB3526D9814F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdvancedDelegate", "AdvancedDelegate\AdvancedDelegate.csproj", "{50A61A9B-D21A-4575-9248-AB3526D9814F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvancedLinq", "AvancedLinq\AvancedLinq.csproj", "{23243A4E-1F8F-47F0-9CAC-7703327491AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{50A61A9B-D21A-4575-9248-AB3526D9814F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50A61A9B-D21A-4575-9248-AB3526D9814F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50A61A9B-D21A-4575-9248-AB3526D9814F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23243A4E-1F8F-47F0-9CAC-7703327491AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23243A4E-1F8F-47F0-9CAC-7703327491AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23243A4E-1F8F-47F0-9CAC-7703327491AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23243A4E-1F8F-47F0-9CAC-7703327491AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
