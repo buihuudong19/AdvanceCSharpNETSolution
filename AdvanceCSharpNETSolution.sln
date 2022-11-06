@@ -13,7 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP.SOLID.SRP", "OOP.SOLID.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdvancedDelegate", "AdvancedDelegate\AdvancedDelegate.csproj", "{50A61A9B-D21A-4575-9248-AB3526D9814F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvancedLinq", "AvancedLinq\AvancedLinq.csproj", "{23243A4E-1F8F-47F0-9CAC-7703327491AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvancedLinq", "AvancedLinq\AvancedLinq.csproj", "{23243A4E-1F8F-47F0-9CAC-7703327491AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.SOLID.OCP", "OOP.SOLID.OCP\OOP.SOLID.OCP.csproj", "{DE920A62-70A9-4126-BF9B-DDF9D48995ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.SOLID.ISP", "OOP.SOLID.ISP\OOP.SOLID.ISP.csproj", "{B80908AA-7E67-4F39-8BC4-14FD04C11B26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{23243A4E-1F8F-47F0-9CAC-7703327491AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23243A4E-1F8F-47F0-9CAC-7703327491AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23243A4E-1F8F-47F0-9CAC-7703327491AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE920A62-70A9-4126-BF9B-DDF9D48995ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE920A62-70A9-4126-BF9B-DDF9D48995ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE920A62-70A9-4126-BF9B-DDF9D48995ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE920A62-70A9-4126-BF9B-DDF9D48995ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B80908AA-7E67-4F39-8BC4-14FD04C11B26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B80908AA-7E67-4F39-8BC4-14FD04C11B26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B80908AA-7E67-4F39-8BC4-14FD04C11B26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B80908AA-7E67-4F39-8BC4-14FD04C11B26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

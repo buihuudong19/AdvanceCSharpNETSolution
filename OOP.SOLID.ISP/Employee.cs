@@ -1,4 +1,4 @@
-﻿namespace OOP.SOLID.SRP;
+﻿namespace OOP.SOLID.OCP;
 public class Employee
 {
     
@@ -8,6 +8,7 @@ public class Employee
     public string? Name { get ; set ; }//Expression-body
     public DateOnly Dob { get ; set ; }
     public string Address { get ; set ; }
+    public string Type { get ; set ; } //Fresher, Junior, Senior, Major, TeamLeader...
 
     public Employee()
     {

@@ -1,4 +1,4 @@
-﻿namespace OOP.SOLID.SRP;
+﻿namespace OOP.SOLID.OCP;
 public class EmployeeStore
 {
     private static int _lastId = default;//c#7.1 
